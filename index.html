@@ -4,7 +4,24 @@
     <meta charset="UTF-8">
     <meta name="description" content="このサイトはK.Takeuchiのポートフォリオサイトです。">
     <title>lrf141.github.io</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" text="text/css" href="style/main.css">
+    <script type="text/javascript">
+        $(function() {
+            $(".intro").click(function() {
+                $(".profile").fadeIn();
+            });
+            $(".close").click(function() {
+                $(".profile").fadeOut();
+            });
+            $(".make").click(function() {
+                $(".making").fadeIn();
+            });
+            $(".close").click(function() {
+                $(".making").fadeOut();
+            });
+        });
+    </script>
 </head>
 <body>
 
@@ -12,10 +29,25 @@
     <h1>Hello world.</h1>
     <ul>
         <li>Home</li>
-        <li>Profile</li>
-        <li>Make</li>
-        <li>Link</li>
+        <li class="intro">Intro</li>
+        <li class="make">Make</li>
+        <li class="link">Link</li>
     </ul>
+    <div class="profile">
+        <h3>Introduction</h3>
+        <h4>name</h4>
+        <p>lrf141</p>
+
+        <h4>language</h4>
+        <p>Scala, Java</p>
+        <div class="close"><h4>close</h4></div>
+    </div>
+
+    <div class="making">
+        <h3>Make</h3>
+        <h4>Twitter4S</h4>
+        <div class="close"><h4>close</h4></div>
+    </div>
 </div>
 
 </body>
