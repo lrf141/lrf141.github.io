@@ -10,6 +10,12 @@
         body{
             margin: 0;
             padding: 0;
+            background-image: url(img/bkg.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: black;
         }
 
         .content {
@@ -21,11 +27,17 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            background-color: black;
-            font-size: 50px;
             color: white;
             font-family: georgia,'times new roman',serif;
             font-variant: small-caps;
+        }
+
+        .content h1{
+            font-size: 50px;
+        }
+
+        .content li{
+            font-size: 50px;
         }
 
         .content ul{
@@ -38,11 +50,6 @@
             font-size: 40px;
             width: 100px;
             height: 50px;
-        }
-
-        .content li:hover{
-            background-color: white;
-            color: black;
         }
 
         .profile {
@@ -69,6 +76,17 @@
             font-size: 30px;
         }
 
+        .links {
+            display: none;
+            width: 100%;
+            height:100%;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            z-index: 100;
+            background: rgba(0,0,0,0.95);
+            font-size: 30px;
+        }
 
         .close{
             color: #717171;
@@ -95,6 +113,12 @@
             $(".close").click(function() {
                 $(".making").fadeOut();
             });
+            $(".link").click(function() {
+                $(".links").fadeIn();
+            });
+            $(".close").click(function() {
+                $(".links").fadeOut();
+            });
         });
     </script>
 </head>
@@ -109,20 +133,34 @@
         <li class="link">Link</li>
     </ul>
     <div class="profile">
-        <h3>Introduction</h3>
-        <h4>name</h4>
+        <h2>Introduction</h2>
+        <h3>name</h3>
         <p>lrf141</p>
-
-        <h4>language</h4>
+        <h3>Job</h3>
+        <p>Student/Engineer</p>
+        <h3>language</h3>
         <p>Scala, Java</p>
         <div class="close"><h4>close</h4></div>
     </div>
 
     <div class="making">
-        <h3>Make</h3>
-        <h4>Twitter4S</h4>
+        <h2>Make</h2>
+        <h3>Twitter4S</h3>
+        <p>Scala Wrapper for the Twitter API</p>
+
+        <h3>This site</h3>
+        <p>Using Html5,CSS,jquery</p>
         <div class="close"><h4>close</h4></div>
     </div>
+
+    <div class="links">
+        <h2>Link</h2>
+        <h3>Twitter</h3>
+        <p><a href="https://twitter.com/lrf141">@lrf141</a></p>
+        <h3>Github</h3>
+        <p><a href="https://github.com/lrf141">lrf141</a></p>
+    <div class="close"><h4>close</h4></div>
+</div>
 </div>
 
 </body>
