@@ -127,7 +127,7 @@ body{
     }
 }
 
-@media screen and (max-width: 769px){
+@media screen and (max-width: 769px) and (max-height: 1024px){
     .content{
         font-size: 40px;
     }
