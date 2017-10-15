@@ -126,3 +126,42 @@ body{
         height: auto;
     }
 }
+
+@media screen and (max-width: 769px){
+    .content{
+        font-size: 40px;
+    }
+
+    .content ul{
+        margin: 0;
+        padding: 0;
+        float: left;
+        margin-right: auto;
+    }
+
+    .content li{
+        font-size: 30px;
+        display: block;
+        list-style: none;
+        text-align: left;
+        padding: 0 0;
+    }
+
+    .profile{
+        font-size: 30px;
+        min-height: 100%;
+        height: auto;
+    }
+
+    .making{
+        font-size: 30px;
+        min-height: 100%;
+        height: auto;
+    }
+
+    .links{
+        font-size: 30px;
+        min-height: 100%;
+        height: auto;
+    }
+}
