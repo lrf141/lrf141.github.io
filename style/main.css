@@ -90,6 +90,22 @@ body{
 
 @media screen and (max-width: 479px){
     .content{
-        font-size: 50px;
+        font-size: 30px;
+    }
+
+    li{
+        font-size: 20px;
+    }
+
+    .profile{
+        font-size: 20px;
+    }
+
+    .making{
+        font-size: 20px;
+    }
+
+    .links{
+        font-size: 20px;
     }
 }
