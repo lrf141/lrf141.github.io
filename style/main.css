@@ -25,11 +25,11 @@ body{
     font-size: 50px;
  }
 
- .content li{
+.content li{
     font-size: 50px;
- }
+}
 
- .content ul{
+.content ul{
     text-align: center;
 }
 
@@ -93,19 +93,36 @@ body{
         font-size: 30px;
     }
 
-    li{
-        font-size: 20px;
+    .content ul{
+        margin: 0;
+        padding: 0;
+        float: left;
+        margin-right: auto;
+    }
+
+    .content li{
+        font-size: 30px;
+        display: block;
+        list-style: none;
+        text-align: left;
+        padding: 0 0;
     }
 
     .profile{
         font-size: 20px;
+        min-height: 100%;
+        height: auto;
     }
 
     .making{
         font-size: 20px;
+        min-height: 100%;
+        height: auto;
     }
 
     .links{
         font-size: 20px;
+        min-height: 100%;
+        height: auto;
     }
 }
